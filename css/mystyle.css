@@ -7,23 +7,27 @@
   src: url('type/AquilineTwo.ttf')
   }
 
-h1 { font-family: "my titles", Georgia, serif; }
-h2 { font-family: "my titles", Georgia, serif; }
-p { font-family: "my text", Georgia, serif; }
+h1.title { font-family: "my titles", Georgia, serif; }
+h2.title { font-family: "my titles", Georgia, serif; }
+p,span { font-family: "my text", Georgia, serif; }
 p{
   font-size: 20px;
-  /*line-height:100%;*/
+  line-height:150%;
 -moz-column-count:3; /* Firefox */
 -webkit-column-count:4; /* Safari and Chrome */
 column-count:2;
 }
 
 p.small{
-  font-size: 12px;
+  font-size: 14px;
   /*line-height:100%;*/
 -moz-column-count:3; /* Firefox */
--webkit-column-count:4; /* Safari and Chrome */
+-webkit-column-count:2; /* Safari and Chrome */
 column-count:2;
+}
+
+span{
+  font-size: 20px;
 }
 
 h1{
@@ -36,11 +40,11 @@ h2{
   font-size: 20px;
 }
 
-.container {
+/*.container {
   width: 1000px;
   margin: 0 auto;
   padding: 0;  
-}
+}*/
 
 img.center {
     display: block;
