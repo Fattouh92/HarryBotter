@@ -56,10 +56,10 @@ Albus Dumbledore was never proud or vain; he could find something to value in an
     	  <h2 class="title">Choose your side</h2>
         <div id="war">
           <a id="myLink" href="#" class="icons" onclick="myFunction();return false;">
-            <img class="top" src="assets/images/hpv1.jpeg"/>
+            <img id="img1" class="" src="assets/images/hpv1.jpeg"/>
           </a>
-          <a id="myLink" href="#" class="icons" onclick="myFunction();return false;">
-            <img class="top" src="assets/images/hpv2.jpeg"/>
+          <a id="myLink2" href="#" class="icons" onclick="myFunction2();return false;">
+            <img id="img2" class="" src="assets/images/hpv2.jpeg"/>
           </a> 
         </div>
       </div>
@@ -73,7 +73,11 @@ Albus Dumbledore was never proud or vain; he could find something to value in an
     });
 
     function myFunction() {
-      alert("Hi");
+      $("#img2").toggleClass("transparent");
+    }
+
+    function myFunction2() {
+      
     }
   </script>
 </body>
