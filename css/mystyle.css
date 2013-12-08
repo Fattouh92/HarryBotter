@@ -56,7 +56,7 @@ img.center {
 
 .icons{
     display:inline-block;
-    width: 215px; 
+    width: 210px; 
     height: auto; 
    }
 
@@ -66,4 +66,12 @@ img.center {
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 opacity:0;
+}
+
+.verticalLine {
+    border-left: solid #000000;
+}
+
+.horizontalLine {
+    border-bottom: solid #000000;
 }
