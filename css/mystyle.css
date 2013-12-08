@@ -82,3 +82,28 @@ opacity:0;
   border-right: solid #000000;
   border-bottom: solid #000000;
 }
+#hand
+{
+position:relative;
+/* Safari and Chrome: */
+-webkit-animation-name:myfirst;
+-webkit-animation-duration:2s;
+-webkit-animation-timing-function:linear;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:alternate;
+-webkit-animation-play-state:running;
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+0%   {left:0px; top:0px;}
+25%  {left:30px; top:0px;}
+50%  {left:0px; top:0px;}
+75%  {left:30px; top:0px;}
+100% {left:0px; top:0px;}
+}
+#exc{
+  position:relative;
+  left:29px;
+  top:0px;
+}
