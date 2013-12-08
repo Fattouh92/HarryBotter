@@ -56,7 +56,7 @@ img.center {
 
 .icons{
     display:inline-block;
-    width: 210px; 
+    width: 200px; 
     height: auto; 
    }
 
@@ -74,4 +74,11 @@ opacity:0;
 
 .horizontalLine {
     border-bottom: solid #000000;
+}
+.whole-block{
+  padding-left:10px;
+  border-top: solid #000000;
+  border-left: solid #000000;
+  border-right: solid #000000;
+  border-bottom: solid #000000;
 }
