@@ -53,6 +53,8 @@ Albus Dumbledore was never proud or vain; he could find something to value in an
         <p class="small">In a shocking revelation, our own Rita Skeeter stumbled upon animal-blood-drinking muggles who are beleived to be in war with werewolves beacuse of a girl to be described later in details who is in love with members of both clans. Both groups are considered dangerous to humanity overall because of the bad influence they have on girls. It is also beleived that one of the vampires called Edward is a 109 year-old pedophile who enjoys watching teenage girls sleep and the other werewolf likes to remove his shirt every two minutes. As for the girl, Bella is a teenage who wants to give up everything, her family and friends whom she treats like scum, her life, for a boy whom she loves only because he's so freaking sparkly gorgeous. She has no dreams, turns down a great college to marry said disco ball and conceive demon spawn at age 18.</p>
       </div>
       <div class="span6">
+        <audio id="audiotag1" src="assets/audio/VAK.mp3" preload="auto"></audio>
+        <audio id="audiotag2" src="assets/audio/HPE.mp3" preload="auto"></audio>
     	  <h2 class="title">Choose your side</h2>
         <div id="war">
           <a id="myLink" href="#" class="icons" onclick="myFunction();return false;">
@@ -68,16 +70,28 @@ Albus Dumbledore was never proud or vain; he could find something to value in an
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="script/bootstrap.js"></script>
   <script type="text/javascript">
+  var flag = false;
+  var flag2 = false;
     $( document ).ready(function() {
-      document.getElementById("video").play();
+      // document.getElementById("video").play();
     });
 
     function myFunction() {
-      $("#img2").toggleClass("transparent");
+      if (flag == false) {
+        $("#img2").toggleClass("transparent");
+        document.getElementById('audiotag2').play();
+        flag = true;
+        flag2 = true;
+      }
     }
 
     function myFunction2() {
-      
+      if (flag2 == false) {
+        $("#img1").toggleClass("transparent");
+        document.getElementById('audiotag1').play();
+        flag2 = true;
+        flag = true;
+      }
     }
   </script>
 </body>
