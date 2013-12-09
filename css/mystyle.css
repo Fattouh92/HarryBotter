@@ -55,7 +55,8 @@ img.center {
   opacity:0;
 }
 .verticalLine {
-  border-left: solid #000000;
+  padding-right: 20px;
+  border-right: solid #000000;
 }
 .horizontalLine {
   border-bottom: solid #000000;
