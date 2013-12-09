@@ -21,11 +21,13 @@ p,span {
 p{
   font-size: 20px;
   line-height:150%;
+  column-count:4;
   -webkit-column-count:4;
   column-count:2;
 }
 p.small{
   font-size: 14px;
+  column-count:2;
   -webkit-column-count:2;
   column-count:2;
 }
@@ -51,6 +53,7 @@ img.center {
   height: auto; 
 }
 .transparent {
+  transition: opacity 1s ease-in-out;
   -webkit-transition: opacity 1s ease-in-out;
   opacity:0;
 }
@@ -70,12 +73,25 @@ img.center {
 }
 #hand {
   position:relative;
+  animation-name:myfirst;
+  animation-duration:2s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-direction:alternate;
+  animation-play-state:running;
   -webkit-animation-name:myfirst;
   -webkit-animation-duration:2s;
   -webkit-animation-timing-function:linear;
   -webkit-animation-iteration-count:infinite;
   -webkit-animation-direction:alternate;
   -webkit-animation-play-state:running;
+}
+@keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left:30px; top:0px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:30px; top:0px;}
+  100% {left:0px; top:0px;}
 }
 @-webkit-keyframes myfirst {
   0%   {left:0px; top:0px;}
@@ -86,6 +102,6 @@ img.center {
 }
 #exc{
   position:relative;
-  left:29px;
+  left:28px;
   top:0px;
 }
