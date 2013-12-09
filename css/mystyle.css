@@ -1,79 +1,64 @@
-#index {background-color:#EFEBE0;}
-/*#EFEBE0*/
+#index {
+  background-color:#EFEBE0;
+}
 @font-face {
   font-family: "my titles";
   src: url('type/BEBAS___.ttf')
-  }
+}
 @font-face {
   font-family: "my text";
   src: url('type/AquilineTwo.ttf')
-  }
-
-h1.title { font-family: "my titles", Georgia, serif; }
-h2.title { font-family: "my titles", Georgia, serif; }
-p,span { font-family: "my text", Georgia, serif; }
+}
+h1.title {
+  font-family: "my titles", Georgia, serif;
+}
+h2.title {
+  font-family: "my titles", Georgia, serif;
+}
+p,span {
+  font-family: "my text", Georgia, serif;
+}
 p{
   font-size: 20px;
   line-height:150%;
--moz-column-count:3; /* Firefox */
--webkit-column-count:4; /* Safari and Chrome */
-column-count:2;
+  -webkit-column-count:4;
+  column-count:2;
 }
-
 p.small{
   font-size: 14px;
-  /*line-height:100%;*/
--moz-column-count:3; /* Firefox */
--webkit-column-count:2; /* Safari and Chrome */
-column-count:2;
+  -webkit-column-count:2;
+  column-count:2;
 }
-
 span{
   font-size: 20px;
 }
-
 h1{
   text-align: center;
   font-size: 100px;
 }
-
 h2{
   text-align: center;
   font-size: 20px;
 }
-
-/*.container {
-  width: 1000px;
-  margin: 0 auto;
-  padding: 0;  
-}*/
-
 img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 .icons{
-    display:inline-block;
-    width: 200px; 
-    height: auto; 
-   }
-
+  display:inline-block;
+  width: 200px; 
+  height: auto; 
+}
 .transparent {
   -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
-opacity:0;
+  opacity:0;
 }
-
 .verticalLine {
-    border-left: solid #000000;
+  border-left: solid #000000;
 }
-
 .horizontalLine {
-    border-bottom: solid #000000;
+  border-bottom: solid #000000;
 }
 .whole-block{
   padding-left:10px;
@@ -82,25 +67,21 @@ opacity:0;
   border-right: solid #000000;
   border-bottom: solid #000000;
 }
-#hand
-{
-position:relative;
-/* Safari and Chrome: */
--webkit-animation-name:myfirst;
--webkit-animation-duration:2s;
--webkit-animation-timing-function:linear;
--webkit-animation-iteration-count:infinite;
--webkit-animation-direction:alternate;
--webkit-animation-play-state:running;
+#hand {
+  position:relative;
+  -webkit-animation-name:myfirst;
+  -webkit-animation-duration:2s;
+  -webkit-animation-timing-function:linear;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-direction:alternate;
+  -webkit-animation-play-state:running;
 }
-
-@-webkit-keyframes myfirst /* Safari and Chrome */
-{
-0%   {left:0px; top:0px;}
-25%  {left:30px; top:0px;}
-50%  {left:0px; top:0px;}
-75%  {left:30px; top:0px;}
-100% {left:0px; top:0px;}
+@-webkit-keyframes myfirst {
+  0%   {left:0px; top:0px;}
+  25%  {left:30px; top:0px;}
+  50%  {left:0px; top:0px;}
+  75%  {left:30px; top:0px;}
+  100% {left:0px; top:0px;}
 }
 #exc{
   position:relative;
