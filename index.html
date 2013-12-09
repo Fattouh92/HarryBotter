@@ -67,6 +67,66 @@
                 <img id="img2" class="" src="assets/images/hpv2.jpeg"/>
               </a> 
             </div>
+            <div id="karim">
+            	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+				<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+				type="text/javascript"></script>
+
+				<style type="text/css">
+					@import url("http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.css");
+					#feedControl {
+						margin-top : 10px;
+						margin-left: auto;
+						margin-right: auto;
+						width : 440px;
+						font-size: 12px;
+						color: #9CADD0;
+					}
+					.news-feed {
+						background: #333;
+						color: #FFF;
+						border-radius: 4px;
+						border: 0;
+						padding: 10px 14px;
+					}
+					#karim {
+						position: relative;
+						top: 58px;
+						left: 5px;
+					}
+				</style>
+				<script>
+					function load() {
+						var feed ="http://rss.cnn.com/rss/edition.rss";
+						new GFdynamicFeedControl(feed, "feedControl");
+					}
+
+					google.load("feeds", "1");
+					google.setOnLoadCallback(load);
+
+
+					function CNN() {
+						worker.postMessage({'cmd': 'cnn'});
+					}
+
+					function BBC() {
+						worker.postMessage({'cmd': 'bbc'});
+					}
+
+					var worker = new Worker('task.js');
+
+					worker.addEventListener('message', function(e) {
+						new GFdynamicFeedControl(e.data, "feedControl");
+					}, false);
+				</script>
+				<div class="horizontalLine"></div>
+				<br>
+				<button class="news-feed" onclick="CNN()">CNN news feed</button>
+				<button class="news-feed" onclick="BBC()">BBC news feed</button>
+            	<div id="body">
+					<div id="feedControl">Loading...</div>
+				</div>
+            </div>
           </div>
         </div>
       </div>
